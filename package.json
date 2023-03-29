@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "pattern-project",
+  "description": "this is a template made by love and loyalty",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.29.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "graceful-fs": "^4.2.11",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.5.0",
+    "node": "^19.8.1",
+    "nodemon": "^2.0.22",
+    "sass": "^1.60.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0"
+  }
+}

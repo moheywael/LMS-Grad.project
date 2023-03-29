@@ -1,0 +1,74 @@
+$colors: (
+    primary: (
+        //brightest
+        // 100: #xxx,
+        // 200: #xxx,
+        // 300: #323094,
+        // 400: #212063,
+        // 500: #111031,
+        //darkest,,,,,,,,,,,
+    ),
+
+    secondary: (
+        //brightest
+        100: xxx,
+        // 200: #xxx,
+        // 300: #xxx,
+        // 400: #xxx,
+        // 500: #xxx,
+        //darkest,,,,,,,,,,
+    ),
+
+    nutral: (
+        //brightest
+        // 100: #xxx,
+        // 200: #eeeeee,
+        // 300: #dddddd,
+        // 400: #616166,
+        // 500: #222222,
+        //darkest,,,,,,,,,,
+    ),
+
+    danger: (
+        //brightest
+        100: #ff5555,
+        // 200: #cc4444,
+        // 300: #993333,
+        // 400: #802b2b,
+        // 500: #331111,
+        //darkest,,,,,,,,,,
+    ),
+
+    success: (
+        //brightest
+        100: #28a745,
+        // 200: #208637,
+        // 300: #186429,
+        // 400: #10431c,
+        // 500: #08210e,
+        //darkest,,,,,,,,,,
+    ),
+
+    warning: (
+        //brightest
+        100: #ffc107,
+        // 200: #208637,
+        // 300: #186429,
+        // 400: #10431c,
+        // 500: #08210e,
+        //darkest,,,,,,,,,,
+    ),
+);
+
+:root {
+    // Generating Colors
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+    // other Colors
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+}
